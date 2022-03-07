@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Kumbh+Sans', sans-serif;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.containerBgTop {
+    background-image: url(images/bg-pattern-top.svg);
+    background-position: bottom right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 30rem;
+}
+.containerBgBottom {
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-position: top left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 30rem;
+}
+
+.card {
+    width: 18rem;
+    height: 20rem;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.cardTop {
+    background-image: url(images/bg-pattern-card.svg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    align-items: flex-end;
+}
+
+.cardTop img {
+    border-radius: 100px;
+    border: 5px white solid;
+}
+
+.cardBottom {
+    height: 10rem;
+    margin-top: -3.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.personInfo {
+    display: grid;
+    grid-template-areas:
+        "name age"
+        "location location";
+    margin-top: 4rem;
+}
+
+.name {
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+.age {
+    color: gray;
+}
+
+.location {
+    text-align: center;
+    color: gray;
+    font-size: smaller;
+    margin-top: .75rem;
+}
+
+.socialStats {
+    display: flex;
+    margin-top: 1.5rem;
+    border-top: .5px solid lightgray;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.stat {
+    margin-top: 1rem;
+}
+
+.number {
+    text-align: center;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 10px;
+    letter-spacing: .1rem;
+    color: gray;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+
+
+
